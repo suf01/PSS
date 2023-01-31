@@ -19,14 +19,8 @@ J22 = 0;
 J44 = 0;
 for j = 1:nbus
 if i ~= j
-J1(i,i) = J1(i,i) + v(i)*v(j)*ym(i,j)*sin(ang(i,j) + delta(j) -
-
-delta(i));
-
-J3(i,i) = J3(i,i) + v(i)*v(j)*ym(i,j)*cos(ang(i,j) + delta(j) -
-
-delta(i));
-
+J1(i,i) = J1(i,i) + v(i)*v(j)*ym(i,j)*sin(ang(i,j) + delta(j) - delta(i));
+J3(i,i) = J3(i,i) + v(i)*v(j)*ym(i,j)*cos(ang(i,j) + delta(j) - delta(i));
 J22 = J22 + v(j)*ym(i,j)*cos(ang(i,j) + delta(j) - delta(i));
 J44 = J44 + v(j)*ym(i,j)*sin(ang(i,j) + delta(j) - delta(i));
 end
