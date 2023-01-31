@@ -1,4 +1,3 @@
-%JACOBIAN MATRIX%
 clc;
 clear all;
 j = sqrt(-1);
